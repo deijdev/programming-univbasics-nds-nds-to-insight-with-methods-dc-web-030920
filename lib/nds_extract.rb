@@ -11,13 +11,13 @@ result = {}
     director_index += 1
   end
   result
-end	end
+end	
 
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer	# Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input	# using director_data as input
 
-def gross_for_director(director_data)	def gross_for_director(director_data)
+def gross_for_director(director_data)	
   movie_index = 0
   movies = director_data[:movies]
   total_gross_for_director = 0
@@ -27,4 +27,4 @@ def gross_for_director(director_data)	def gross_for_director(director_data)
     movie_index += 1
   end
   total_gross_for_director
-end	end
+end	
