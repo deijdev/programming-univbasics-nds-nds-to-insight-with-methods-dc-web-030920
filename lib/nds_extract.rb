@@ -1,17 +1,25 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
-# Find a way to accumulate the :worldwide_grosses and return that Integer
-# using director_data as input
-def gross_for_director(director_data)
+def nyc_pigeon_organizer(data)
+  # write your code here!
+  new_hash = {}
+  data.each do |property, hash|
+    hash.each do |attribute, array|
+      array.each do |name|
+        if !new_hash.has_key?(name)
+          new_hash[name] = {}
+        end
 
-end
+        if !new_hash[name].has_key?(property)
+          new_hash[name][property] = []
+        end
 
-# Write a method that, given an NDS creates a new Hash
-# The return value should be like:
-#
-# { directorOne => allTheMoneyTheyMade, ... }
-def directors_totals(nds)
-  result = {}
-  nil
+        if !new_hash[name][property].include?(attribute)
+          new_hash[name][property] << attribute.to_s
+        end
+      end
+    end
+  end
+  new_hash
 end
