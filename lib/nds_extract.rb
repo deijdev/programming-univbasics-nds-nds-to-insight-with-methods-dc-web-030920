@@ -1,9 +1,6 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
-
-Viewed
-@@ -1,3 +1,44 @@
 def nyc_pigeon_organizer(data)	def nyc_pigeon_organizer(data)
   # write your code here!	  pigeon_list = {}
 end	
