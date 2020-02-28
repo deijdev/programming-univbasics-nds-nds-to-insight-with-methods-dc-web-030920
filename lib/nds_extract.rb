@@ -1,9 +1,7 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
-def nyc_pigeon_organizer(data)	def nyc_pigeon_organizer(data)
-  # write your code here!	  pigeon_list = {}
-end	
+def nyc_pigeon_organizer(data)
   # Work with male and female pigeons to first construct a hash backbone by merging the male and female hashes
 
   male_pigeons = data[:gender][:male]
