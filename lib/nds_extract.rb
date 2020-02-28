@@ -2,7 +2,8 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
 def directors_totals(nds)
-  result = {}	  
+  result = {}	
+  nil
   directors =[{:name "Paul", :revenue => 123456789}, {:name "Jean" :revenue => 1234567789}, {:name "Sam" :revenue =>1234567889}]
 end	
 
